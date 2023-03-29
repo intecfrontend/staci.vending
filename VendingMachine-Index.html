@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="VendingMachine-Style.css"></link>
+    <link rel="stylesheet" href="VendingMachine-Style.css">
+    </link>
 </head>
+
 <body>
     <div id="leftContainer">
 
-<!--text bubble-->
-    <img id="bubble" src="./images/bubble.png" alt="text bubble">
+        <!--text bubble-->
+        <img id="bubble" src="./images/bubble.png" alt="text bubble">
         <div id="textContainer">
             <p id="textBox" class="text" type="text">Make your choice.</p>
             <input id="textInput"></input>
+            <img id="drinkslogo" src="#" alt="" />
+
         </div>
 
-        
-            <!--on hover item description container-->
+
+        <!--on hover item description container-->
         <div id="descriptionContainer">
             <p id="des1" class="description">lime soda &nbsp; $ 1.5 &nbsp; B 1</p>
             <p id="des2" class="description">pineapple soda &nbsp; $ 1.5 &nbsp; B 2</p>
@@ -26,9 +31,9 @@
             <p id="des4" class="description">energy drink &nbsp; $ 2 &nbsp; B 4</p>
             <p id="des5" class="description">jungle drink &nbsp; $ 2 &nbsp; B 5</p>
         </div>
-    </img>
+        </img>
 
-<!--button container-->
+        <!--button container-->
         <div id="btnContainer">
             <div>
                 <input type="button" class="btn letter" id="A" value="A" onclick="enabler()"></input>
@@ -36,7 +41,7 @@
                 <input type="button" class="btn letter" id="C" value="C" onclick="enabler()"></input>
                 <input type="button" class="btn letter" id="D" value="D" onclick="enabler()"></input>
                 <input type="button" class="btn letter" id="E" value="E" onclick="enabler()"></input>
-              <input type="submit" class="submitBtn" id="check" value="&check;" onclick="getValue(event)"></input>
+                <input type="submit" class="submitBtn" id="check" value="&check;" onclick="getValue(event)"></input>
             </div>
             <div>
                 <input type="button" class="btn number" id="1" value="1" disabled></input>
@@ -46,40 +51,41 @@
                 <input type="button" class="btn number" id="5" value="5" disabled></input>
                 <input type="button" class="submitBtn" id="delete" value="&#10005;"></input>
             </div>
-            
+
         </div>
 
     </div>
 
-<!--menu slider-->
-        <div id="menuContainer">
-           <!-- <div class="scrollBtn" id="scroll-up" ></div>-->
+    <!--menu slider-->
+    <div id="menuContainer">
+        <!-- <div class="scrollBtn" id="scroll-up" ></div>-->
 
-            <ul id="itemContainer" style="list-style: none">  
-                <li>
-                    <img class="item" id="item1" src="./images/lime.png" alt="lime drink"></img>
-                </li>
-                <li>
-                    <img class="item" id="item2" src="./images/pineapple.png" alt="pineapple drink"></img>
-                </li>
-                <li>
-                    <img class="item" id="item3" src="./images/cola.png" alt="cola drink"></img>
-                </li>
-                <li>
-                    <img class="item" id="item4" src="./images/energy.png" alt="energy drink"></img>
-                </li>
-                <li>
-                    <img class="item" id="item5" src="./images/jungle.png" alt="jungle drink"></img>
-                </li>
-            </ul>
-            
+        <ul id="itemContainer" style="list-style: none">
+            <li>
+                <img class="item" id="item1" src="./images/lime.png" alt="lime drink"></img>
+            </li>
+            <li>
+                <img class="item" id="item2" src="./images/pineapple.png" alt="pineapple drink"></img>
+            </li>
+            <li>
+                <img class="item" id="item3" src="./images/cola.png" alt="cola drink"></img>
+            </li>
+            <li>
+                <img class="item" id="item4" src="./images/energy.png" alt="energy drink"></img>
+            </li>
+            <li>
+                <img class="item" id="item5" src="./images/jungle.png" alt="jungle drink"></img>
+            </li>
+        </ul>
 
-          <!--  <div class="scrollBtn" id="scroll-down"></div>-->
-        </div>
 
-<!--vending machine-->
-        <image id="machine" src="./images/machine.png" alt="vending machine"></image>      
-     
-<script src="VendingMachine-Script.js"></script>
+        <!--  <div class="scrollBtn" id="scroll-down"></div>-->
+    </div>
+
+    <!--vending machine-->
+    <image id="machine" src="./images/machine.png" alt="vending machine"></image>
+
+    <script src="VendingMachine-Script.js"></script>
 </body>
+
 </html>

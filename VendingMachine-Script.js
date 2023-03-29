@@ -4,27 +4,32 @@ const text = document.querySelector("#textBox");
 const drinks = [{
   name: "lime soda",
   price: 1.5,
-  code: "B1"
+  code: "B1",
+  logo: "./images/mystery.png"
 },
 {
   name: "pineapple soda",
   price: 1.5,
-  code: "B2"
+  code: "B2",
+  logo: "./images/orange.png"
 },
 {
   name: "cola drink",
   price: 1.5,
-  code: "B3"
+  code: "B3",
+  logo: "./images/Coke_logo.svg"
 },
 {
   name: "energy drink",
   price: 2.0,
-  code: "B4"
+  code: "B4",
+  logo: "./images/pinkbar.png"
 },
 {
   name: "jungle drink",
   price: 2.0,
-  code: "B5"
+  code: "B5",
+  logo: "./images/jungle.png"
 },
 ]
 
@@ -59,6 +64,8 @@ function enabler() {
 function getValue(event) {
   let input = document.getElementsByTagName("input")[0];
   const output = document.getElementById("textBox");
+  const logochanger = document.getElementById("drinkslogo");
+  ("textBox");
 
   console.log("IV", input.value);
   // .find(element=> (element.code === input.value)))
@@ -69,14 +76,20 @@ function getValue(event) {
   console.log("match1", match.code);
   console.log("match2", match.name);
 
-  if (input.value === match.code); console.log("match3", `${(match.name)}`);
+  if (input.value === match.code); console.log("match3", `${(match.name) + (match.logo)}`);
 
-  output.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
+  output.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"
+
+    }`;
+  logochanger.src = `${(match.logo)}`
+  logochanger.alt = `${(match.logo)}`
+
 }
-// else {
-//   output.innerHTML = "Out of stock" ;
-// }
-// } 
+
+// else 
+//  ( output.innerHTML = "Out of stock");
+
+
 
 
 
